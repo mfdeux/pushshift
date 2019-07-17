@@ -1,5 +1,9 @@
 # pushshift
 
+[![](https://godoc.org/github.com/mfdeux/pushshift?status.svg)](http://godoc.org/github.com/mfdeux/pushshift)
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/mfdeux/pushshift)](https://goreportcard.com/report/github.com/mfdeux/pushshift)
+
 A Go client for the [pushshift.io reddit API](https://pushshift.io/api-parameters/).
 
 ## Installation
