@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mfdeux/pushshift"
+	"github.com/mfdeux/pushshift/pushshift"
 )
 
 func main() {

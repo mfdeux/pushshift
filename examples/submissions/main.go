@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mfdeux/pushshift"
+	"github.com/mfdeux/pushshift/pushshift"
 )
 
 func main() {

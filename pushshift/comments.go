@@ -10,39 +10,39 @@ import (
 
 // CommentQuery is the query for comments
 type CommentQuery struct {
-	Sort                string `url:"sort,omitempty"`
-	SortType            string `url:"sort_type,omitempty"`
-	After               int    `url:"after,omitempty"`
-	Before              int    `url:"before,omitempty"`
-	AfterID             int    `url:"after_id,omitempty"`
-	BeforeID            int    `url:"before_id,omitempty"`
-	CreatedUTC          int    `url:"created_utc,omitempty"`
-	Score               int    `url:"score,omitempty"`
-	Gilded              int    `url:"gilded,omitempty"`
-	Edited              bool   `url:"edited,omitempty"`
-	Author              string `url:"author,omitempty"`
-	Subreddit           string `url:"subreddit,omitempty"`
-	Distinguished       string `url:"distinguished,omitempty"`
-	RetrievedOn         int    `url:"retrieved_on,omitempty"`
-	LastUpdated         int    `url:"last_updated,omitempty"`
-	Query               string `url:"q,omitempty"`
-	ID                  int    `url:"id,omitempty"`
-	Metadata            bool   `url:"metadata,omitempty"`
-	Unique              string `url:"unique,omitempty"`
-	Pretty              bool   `url:"pretty,omitempty"`
-	HTMLDecode          bool   `url:"html_decode,omitempty"`
-	Permalink           string `url:"permalink,omitempty"`
-	IsUserRemoved       bool   `url:"user_removed,omitempty"`
-	IsModRemoved        bool   `url:"mod_removed,omitempty"`
-	SubredditType       string `url:"subreddit_type,omitempty"`
-	AuthorFlairCSSClass string `url:"author_flair_css_class,omitempty"`
-	AuthorFlairText     string `url:"author_flair_text,omitempty"`
-	ReplyDelay          int    `url:"reply_delay,omitempty"`
-	NestLevel           int    `url:"nest_level,omitempty"`
-	SubReplyDelay       int    `url:"sub_reply_delay,omitempty"`
-	UTCHourOfWeek       int    `url:"utc_hour_of_week,omitempty"`
-	LinkID              int    `url:"link_id,omitempty"`
-	ParentID            int    `url:"parent_id,omitempty"`
+	Sort                string `url:"sort,omitempty" json:"sort,omitempty"`
+	SortType            string `url:"sort_type,omitempty" json:"sort_type,omitempty"`
+	After               int    `url:"after,omitempty" json:"after,omitempty"`
+	Before              int    `url:"before,omitempty" json:"before,omitempty"`
+	AfterID             int    `url:"after_id,omitempty" json:"after_id,omitempty"`
+	BeforeID            int    `url:"before_id,omitempty" json:"before_id,omitempty"`
+	CreatedUTC          int    `url:"created_utc,omitempty" json:"created_utc,omitempty"`
+	Score               int    `url:"score,omitempty" json:"score,omitempty"`
+	Gilded              int    `url:"gilded,omitempty" json:"gilded,omitempty"`
+	Edited              bool   `url:"edited,omitempty" json:"edited,omitempty"`
+	Author              string `url:"author,omitempty" json:"author,omitempty"`
+	Subreddit           string `url:"subreddit,omitempty" json:"subreddit,omitempty"`
+	Distinguished       string `url:"distinguished,omitempty" json:"distinguished,omitempty"`
+	RetrievedOn         int    `url:"retrieved_on,omitempty" json:"retrieved_on,omitempty"`
+	LastUpdated         int    `url:"last_updated,omitempty" json:"last_updated,omitempty"`
+	Query               string `url:"q,omitempty" json:"q,omitempty"`
+	ID                  int    `url:"id,omitempty" json:"id,omitempty"`
+	Metadata            bool   `url:"metadata,omitempty" json:"metadata,omitempty"`
+	Unique              string `url:"unique,omitempty" json:"unique,omitempty"`
+	Pretty              bool   `url:"pretty,omitempty" json:"pretty,omitempty"`
+	HTMLDecode          bool   `url:"html_decode,omitempty" json:"html_decode,omitempty"`
+	Permalink           string `url:"permalink,omitempty" json:"permalink,omitempty"`
+	IsUserRemoved       bool   `url:"user_removed,omitempty" json:"user_removed,omitempty"`
+	IsModRemoved        bool   `url:"mod_removed,omitempty" json:"mod_removed,omitempty"`
+	SubredditType       string `url:"subreddit_type,omitempty" json:"subreddit_type,omitempty"`
+	AuthorFlairCSSClass string `url:"author_flair_css_class,omitempty" json:"author_flair_css_class,omitempty"`
+	AuthorFlairText     string `url:"author_flair_text,omitempty" json:"author_flair_text,omitempty"`
+	ReplyDelay          int    `url:"reply_delay,omitempty" json:"reply_delay,omitempty"`
+	NestLevel           int    `url:"nest_level,omitempty" json:"nest_level,omitempty"`
+	SubReplyDelay       int    `url:"sub_reply_delay,omitempty" json:"sub_reply_delay,omitempty"`
+	UTCHourOfWeek       int    `url:"utc_hour_of_week,omitempty" json:"utc_hour_of_week,omitempty"`
+	LinkID              int    `url:"link_id,omitempty" json:"link_id,omitempty"`
+	ParentID            int    `url:"parent_id,omitempty" json:"parent_id,omitempty"`
 }
 
 // CommentGildings is a placeholder for gilded comments
