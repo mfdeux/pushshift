@@ -7,16 +7,18 @@ import (
 )
 
 const (
-	submissionEndpoint string = "https://api.pushshift.io/reddit/submission/search"
-	commentsEndpoint   string = "https://api.pushshift.io/reddit/comments/search"
+	submissionEndpoint string = "https://api.pushshift.io/reddit/search/submission"
+	commentsEndpoint   string = "https://api.pushshift.io/reddit/search/comment"
 	sseEndpoint        string = "http://stream.pushshift.io"
-	HTTPTimeout        int    = 5
+	// HTTPTimeout is the timeout in seconds for the HTTP client
+	HTTPTimeout int = 5
 	// SortAsc is a helper constant to sort ascending
 	SortAsc string = "asc"
 	// SortDesc is a helper constant to sort ascending
 	SortDesc string = "desc"
 )
 
+// NewClient creates a new client
 func NewClient(userAgent string) *Client {
 	httpClient := newHTTPClient(HTTPTimeout)
 	return &Client{
@@ -25,6 +27,7 @@ func NewClient(userAgent string) *Client {
 	}
 }
 
+// NewClientWithProxy creates a new client that uses a proxy
 func NewClientWithProxy(userAgent string, proxyURL string) (*Client, error) {
 	httpClient, err := newHTTPClientWithProxy(HTTPTimeout, proxyURL)
 	return &Client{
@@ -54,11 +57,8 @@ func newHTTPClientWithProxy(timeout int, proxyURL string) (*http.Client, error) 
 	return netClient, nil
 }
 
+// Client is the base pushshift HTTP client
 type Client struct {
 	http      *http.Client
 	userAgent string
-}
-
-func (c *Client) makeURL(endpoint, query string) string {
-	return ""
 }

@@ -1,6 +1,6 @@
 # pushshift
 
-A Go client for the [pushshift.io API](https://pushshift.io/api-parameters/).
+A Go client for the [pushshift.io reddit API](https://pushshift.io/api-parameters/).
 
 ## Installation
 

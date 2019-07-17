@@ -11,17 +11,17 @@ import (
 // from: https://github.com/pushshift/reddit_sse_stream
 
 type FirehoseQuery struct {
-	Type               string `url:"type"`
-	Author             string `url:"author"`
-	Domain             string `url:"domain"`
-	Subreddit          string `url:"subreddit"`
-	SubmissionBackfill int    `url:"submission_backfil"`
-	CommentBackfill    int    `url:"comment_backfill"`
-	SubmissionStartID  int    `url:"submission_start_id"`
-	CommentStartID     int    `url:"comment_start_id"`
-	IsOver18           bool   `url:"over_18"`
-	IsSelf             bool   `url:"is_self"`
-	Filter             string `url:"filter"`
+	Type               string `url:"type,omitempty"`
+	Author             string `url:"author,omitempty"`
+	Domain             string `url:"domain,omitempty"`
+	Subreddit          string `url:"subreddit,omitempty"`
+	SubmissionBackfill int    `url:"submission_backfill,omitempty"`
+	CommentBackfill    int    `url:"comment_backfill,omitempty"`
+	SubmissionStartID  int    `url:"submission_start_id,omitempty"`
+	CommentStartID     int    `url:"comment_start_id,omitempty"`
+	IsOver18           bool   `url:"over_18,omitempty"`
+	IsSelf             bool   `url:"is_self,omitempty"`
+	Filter             string `url:"filter,omitempty"`
 }
 
 func (c *Client) StreamFirehose(q *FirehoseQuery) chan interface{} {

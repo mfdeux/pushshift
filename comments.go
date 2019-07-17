@@ -10,42 +10,42 @@ import (
 
 // CommentQuery is the query for comments
 type CommentQuery struct {
-	Sort                string `url:"sort"`
-	SortType            string `url:"sort_type"`
-	After               int    `url:"after"`
-	Before              int    `url:"before"`
-	AfterID             int    `url:"after_id"`
-	BeforeID            int    `url:"before_id"`
-	CreatedUTC          int    `url:"created_utc"`
-	Score               int    `url:"score"`
-	Gilded              int    `url:"gilded"`
-	Edited              bool   `url:"edited"`
-	Author              string `url:"author"`
-	Subreddit           string `url:"subreddit"`
-	Distinguished       string `url:"distinguished"`
-	RetrievedOn         int    `url:"retrieved_on"`
-	LastUpdated         int    `url:"last_updated"`
-	Query               string `url:"q"`
-	ID                  int    `url:"id"`
-	Metadata            bool   `url:"metadata"`
-	Unique              string `url:"unique"`
-	Pretty              bool   `url:"pretty"`
-	HTMLDecode          bool   `url:"html_decode"`
-	Permalink           string `url:"permalink"`
-	IsUserRemoved       bool   `url:"user_removed"`
-	IsModRemoved        bool   `url:"mod_removed"`
-	SubredditType       string `url:"subreddit_type"`
-	AuthorFlairCSSClass string `url:"author_flair_css_class"`
-	AuthorFlairText     string `url:"author_flair_text"`
-
-	ReplyDelay    int `url:"reply_delay"`
-	NestLevel     int `url:"nest_level"`
-	SubReplyDelay int `url:"sub_reply_delay"`
-	UTCHourofWeek int `url:"utc_hour_of_week"`
-	LinkID        int `url:"link_id"`
-	ParentID      int `url:"parent_id"`
+	Sort                string `url:"sort,omitempty"`
+	SortType            string `url:"sort_type,omitempty"`
+	After               int    `url:"after,omitempty"`
+	Before              int    `url:"before,omitempty"`
+	AfterID             int    `url:"after_id,omitempty"`
+	BeforeID            int    `url:"before_id,omitempty"`
+	CreatedUTC          int    `url:"created_utc,omitempty"`
+	Score               int    `url:"score,omitempty"`
+	Gilded              int    `url:"gilded,omitempty"`
+	Edited              bool   `url:"edited,omitempty"`
+	Author              string `url:"author,omitempty"`
+	Subreddit           string `url:"subreddit,omitempty"`
+	Distinguished       string `url:"distinguished,omitempty"`
+	RetrievedOn         int    `url:"retrieved_on,omitempty"`
+	LastUpdated         int    `url:"last_updated,omitempty"`
+	Query               string `url:"q,omitempty"`
+	ID                  int    `url:"id,omitempty"`
+	Metadata            bool   `url:"metadata,omitempty"`
+	Unique              string `url:"unique,omitempty"`
+	Pretty              bool   `url:"pretty,omitempty"`
+	HTMLDecode          bool   `url:"html_decode,omitempty"`
+	Permalink           string `url:"permalink,omitempty"`
+	IsUserRemoved       bool   `url:"user_removed,omitempty"`
+	IsModRemoved        bool   `url:"mod_removed,omitempty"`
+	SubredditType       string `url:"subreddit_type,omitempty"`
+	AuthorFlairCSSClass string `url:"author_flair_css_class,omitempty"`
+	AuthorFlairText     string `url:"author_flair_text,omitempty"`
+	ReplyDelay          int    `url:"reply_delay,omitempty"`
+	NestLevel           int    `url:"nest_level,omitempty"`
+	SubReplyDelay       int    `url:"sub_reply_delay,omitempty"`
+	UTCHourOfWeek       int    `url:"utc_hour_of_week,omitempty"`
+	LinkID              int    `url:"link_id,omitempty"`
+	ParentID            int    `url:"parent_id,omitempty"`
 }
 
+// CommentGildings is a placeholder for gilded comments
 type CommentGildings struct{}
 
 // Comment is a holder for comment data
