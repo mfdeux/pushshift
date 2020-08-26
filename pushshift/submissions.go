@@ -37,6 +37,7 @@ type SubmissionQuery struct {
 	SubredditType       string `url:"subreddit_type,omitempty" json:"subreddit_type,omitempty"`
 	AuthorFlairCSSClass string `url:"author_flair_css_class,omitempty" json:"author_flair_css_class,omitempty"`
 	AuthorFlairText     string `url:"author_flair_text,omitempty" json:"author_flair_text,omitempty"`
+	Size                int    `url:"size,omitempty" json:"size,omitempty"`
 
 	IsOver18          bool `url:"over_18,omitempty" json:"over_18,omitempty"`
 	IsLocked          bool `url:"author_flair_text,omitempty" json:"author_flair_text,omitempty"`
